@@ -9,6 +9,7 @@
 :root {
   --bg-body: #faf7fd;
   --color-primary: #bb99dd;
+  --color-secondary: #6c5682;
   --font-poppins: "Poppins", sans-serif;
 }
 
@@ -77,7 +78,7 @@ body {
 }
 
 footer {
-  color: #6c5682;
+  color: var(--color-secondary);
   font-size: 14px;
   font-weight: 300;
   padding: 20px 0;
@@ -85,6 +86,7 @@ footer {
 }
 
 .footer_author {
+  color: var(--color-primary);
   font-weight: 400;
 }
 
