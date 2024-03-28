@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-body: #faf7fd;
+  --color-primary: #bb99dd;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-body);
+  font-family: var(--font-poppins);
+}
+
+.container {
+  margin: auto;
+  max-width: 420px;
+  padding: 44px;
+}
+
+.avatar {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.avatar_wrapper {
+  border: 3px solid var(--color-primary);
+  border-radius: 50%;
+  height: 215px;
+  padding: 6px;
+  width: 215px;
+}
+
+.avatar_cover {
+  background: url("./assets/profile.png") no-repeat center/cover;
+  border-radius: 50%;
+  display: block;
+  height: 100%;
+}
+
+.avatar_username {
+  color: var(--color-primary);
+  font-weight: 300;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+  padding: 32px 0;
+}
+
+.item_link {
+  color: var(--color-primary);
+  display: inline-block;
+  border: 2px solid var(--color-primary);
+  font-weight: 600;
+  padding: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.social-medias {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 24px;
+}
+
+footer {
+  color: #6c5682;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer_author {
+  font-weight: 400;
+}
+
+@media (min-width: 400px) {
+  .social-medias {
+    justify-content: space-between;
+  }
+
+  .social-medias_link {
+    align-items: center;
+    border: 2px solid var(--color-primary);
+    display: flex;
+    padding: 16px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
